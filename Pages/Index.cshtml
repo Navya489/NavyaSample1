@@ -1,0 +1,119 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .hero {
+        background: linear-gradient(to right, #1e3a8a, #6366f1);
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        margin-bottom: 20px;
+    }
+
+    .buttons a.btn {
+        background-color: white;
+        color: #1e3a8a;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    .btn-secondary {
+        background-color: #e0e7ff;
+        color: #1e3a8a;
+    }
+
+    .about {
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        font-size: 0.95rem;
+        color: #666;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+    }
+</style>
+
+<main>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="~/images/profile.jpg" alt="Navya Namburi" class="profile-pic" />
+            <h1>Navya Namburi</h1>
+            <p>.NET Full Stack Developer | 4+ Years of Experience</p>
+            <div class="buttons">
+                <a href="~/Navya_Namburi_Resume.pdf" class="btn">📄 Download Resume</a>
+                <a href="/Contact" class="btn btn-secondary">📧 Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                Hi, I’m Navya Namburi — a full stack .NET developer with 4+ years of hands-on experience building modern, scalable, and reliable web applications. I specialize in Microsoft technologies, especially ASP.NET Core and C#, but I’m just as comfortable working with front-end frameworks like Angular and React.
+            </p>
+            <p>
+                Throughout my journey with companies like Accenture, United Airlines, and Starr Insurance, I’ve had the opportunity to modernize legacy systems, lead backend integrations, and build user-centric solutions that make an actual impact. Whether it’s streamlining insurance processing systems or improving operational efficiency in aviation, I take pride in delivering clean, efficient, and maintainable code.
+            </p>
+            <p>
+                I enjoy working in Agile environments, collaborating across teams, and always looking for ways to improve both product and process. I’m passionate about staying current with tech trends, and I thrive on solving real-world problems through thoughtful engineering. Outside of work, I’m constantly exploring new tools, <span style="color: inherit; text-decoration: none;">cloud</span> platforms like Azure and AWS, and best practices that make great software even better.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p style="text-align: center; color: #666; font-size: 0.95rem;">
+        &copy; 2025 - NavyaPortfolio - <a href="/Privacy" style="color: #666; text-decoration: underline;">Privacy</a>
+    </p>
+</footer>
+
